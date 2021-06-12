@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;/*To box model implementation*/
+}
+/*Gloabl */
+body{
+    font-family:"Merriweather",sans-serif;
+    background-color: #edf2ff;
+    overflow-x: hidden;
+}
+.text_desc{
+  
+}
+.container{
+    width:100%;
+    margin:0 auto;
+    padding:0 15px;
+}
+.hero_container{
+    width:100%;
+}
+.hero_image_container{
+    width:100%;
+    padding-right: 10px;
+}
+.hero_image{
+    width:100%;
+}
+/*Nvabar Styling*/
+.navbar{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.navbar__brand{
+    width: 100px; 
+}
+.navbar__logo{
+    width:100%;
+}
+
+/*Button CSS*/
+
+.button__primary{
+    background-image: linear-gradient(to right,
+    rgb(255,81,41),
+    rgba(221,36,118),
+    rgba(255,0,0,1)
+    );
+     color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+}
+
+@media (min-width:768px){
+    .navbar{
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    .navbar__brand{
+        width: 150px;
+    }
+    .nav__item{
+        padding:20px;
+        font-size: 20px;
+    }
+    .hero__container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+@media (min-width:1020px){
+    .container{
+        max-width: 1010px;
+    }
+    .hero__image__container{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media (min-width:1400px){
+    
+}
