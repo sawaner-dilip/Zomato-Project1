@@ -9,9 +9,6 @@ body{
     background-color: #edf2ff;
     overflow-x: hidden;
 }
-.text_desc{
-  
-}
 .container{
     width:100%;
     margin:0 auto;
@@ -26,6 +23,9 @@ body{
 }
 .hero_image{
     width:100%;
+}
+.hero__text{
+    font-size: 30px;
 }
 /*Nvabar Styling*/
 .navbar{
@@ -52,6 +52,14 @@ body{
     padding: 12px;
     border: none;
     border-radius: 6px;
+    cursor:pointer;
+}
+/* Explore Menu  */
+.food__menu__card{
+    width: 100%;
+}
+.food_image{
+    width: 100%;
 }
 
 @media (min-width:768px){
@@ -76,13 +84,15 @@ body{
 }
 @media (min-width:1020px){
     .container{
-        max-width: 1010px;
+        max-width: 920px;
     }
-    .hero__image__container{
-        width: 500px;
-        height: 500px;
+    
+    .hero__text{
+        font-size: 45px;
     }
 }
 @media (min-width:1400px){
-    
+ .container{
+     max-width: 1250px;
+ }   
 }
