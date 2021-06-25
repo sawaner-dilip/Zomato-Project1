@@ -15,7 +15,7 @@
             <div class="navbar__brand"><!--Block Element Modifier-->
                 <img src="assets/logo.png" alt="logo" class="navbar__logo"/> 
             </div>
-            <div class="navbar_nav_items"> <!--Multiple items we can use-->
+            <div class="navbar__nav__items"> <!--Multiple items we can use-->
                 <button class="nav__item button__primary">Order Food</button>
             </div>
         </nav>
@@ -24,9 +24,12 @@
     <main class="container">
         <section class="hero__container">
             <div class="hero__image__container">
-                <img src="assets/hero.jpg" alt="hero" class="hero_image"/>
+                <img  class="hero__image" src="assets/hero.jpg" alt="hero image"/>
+              <!--  <img src="./assets/svg/heroShape.svg" class="hero_image" alt="hero__shape"/>
+                <img src="./assets/svg/herobgpattren.svg" class="hero_image" alt="hero__shape"/>
+               -->  
             </div>
-            <div class="hero__desc">
+            <div class="hero__description">
                 <h1 class="hero__text">Order food from favourite restaurants near to you</h1>
                 <button class="button__primary">Order Now</button>
             </div>
@@ -34,7 +37,7 @@
         <!--Explore Menu Section-->
         <section class="explore__menu__container">
             <h1 class="explore__menu__text">Explore Menu</h1>
-            <div class="explore__menu__gradient__bg"></div>
+            <div class="explore__menu__gradient__bg">
             <div class="explore__menu__lists">
                 <!--Burger-->
                 <div class="food__menu__card">
@@ -47,34 +50,112 @@
                         </p>
                     </div>
                 </div>
-                <!--Ice-->
+                <!--Ice Cream-->
                 <div class="food__menu__card">
                     <img src="assets/burger.jpg" alt="burger" class="food__image"/>
                     <div class="food__menu__card__desc">
-                        <h3 class="food__title"></h3>
+                        <h3 class="food__title">Ice</h3>
                         <p class="food__restaurants">
-                            Burger King, McDonald, Burger Place
+                            Baskin Robins, Ibaco, Chaco
                             <span style="color: red;">+3</span>
                         </p>
                     </div>
                 </div>
                 <!--Pizza-->
                 <div class="food__menu__card" id="pizza__card">
-                    <img src="assets/burger.jpg" alt="burger" class="food__image"/>
+                    <img src="assets/pizza.jpg" alt="Pizza" class="food__image"/>
                     <div class="food__menu__card__desc">
-                        <h3 class="food__title"></h3>
+                        <h3 class="food__title">Pizza</h3>
                         <p class="food__restaurants">
-                            Burger King, McDonald, Burger Place
+                            Pizza Hut, Domino's Pizza
                             <span style="color: red;">+3</span>
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="explore_menu__view__more">
+               <div class="explore_menu__view__more">
                 <button class="button__primary">View More</button>
+               </div>
             </div>
+        </section>
+    <!--Restaurants-->
+        <section class ="restaurants__container">
+            <h1 class="restaurants__description">Order from 100 of Restaurants</h1>
+            <div class="restaurants__flex">
+                <div class="restaurants__flex__row__one">
+                    <div class="restaurants_1">
+                       <img 
+                       class="restaurant__1__image"
+                       src="./assets/restaurant1.jpg"
+                       alt="restaurant__1"
+                       />     
+                    </div>   
+                    <div class="restaurants_2">
+                        <img 
+                        class="restaurant__2__image"
+                        src="./assets/restaurant2.jpg"
+                        alt="restaurant__2"
+                        />     
+                     </div>   
+                </div>
+                <div class="restaurants__flex__row__two">
+                    <div class="restaurants_3">
+                       <img 
+                       class="restaurant__3__image"
+                       src="./assets/restaurant1.jpg"
+                       alt="restaurant__3"
+                       />     
+                    </div>   
+                    <div class="restaurants_4">
+                        <img 
+                        class="restaurant__4__image"
+                        src="./assets/restaurant2.jpg"
+                        alt="restaurant__4"
+                        />     
+                     </div>   
+                </div>                      
+            </div>
+        </section>
+        <section class="video_container">
+            <div>
 
+            </div>
+        </section>
+        <!--Updates Information-->
+        <section class="update__container">
+            <div class="update__container_text">
+                <h3 class="update__text"> Stay Update</h3>
+            </div>
+            <div class="update__text__input">
+                <input type="email" class="update_email" placeholder="email@gmail.com" required/>
+                <button class="update_button button__primary">Get Update</button>
+            </div>
+        </section>
+        <!--Footer Image -->
+        <section class="footer_image__container">
+            <img class="image__background__footer"
+            src="assets/restaurant5.jpg"
+            alt="restaurant"/>
+            <h3 class="footer__image__text">
+                When a man's stomach is full, it makes no difference, whether he is rich or poor.
+            </h3>
         </section>
     </main>
+    <footer>
+        <section class="footer__container">
+            <div class="footer__gradient__bg"></div>
+            <div class="footer__container__logo">
+                <img src="./assets/logo.png" alt="Logo"
+                class="footer_image"/>
+            </div>
+            <div class="footer__container__items">
+                <h4 class="pricing"> Pricing </h4>
+                <h4 class="tnc"> Terms & Conditions </h4>
+                <h4 class="partner"> Partnership </h4>
+                <h4 class="career"> Career </h4>
+                <h4 class="contact"> Contact </h4>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
